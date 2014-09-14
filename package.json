@@ -1,0 +1,15 @@
+{
+    "name": "loopback-dbfirst",
+    "description": "A simple generator for database first approach in loopback 2.x",
+    "version": "0.0.1",
+    "dependencies": {
+        "async": "^0.9.0"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/caolan/async/raw/master/LICENSE"
+        }
+    ],
+    "readmeFilename": "README.md"
+}
