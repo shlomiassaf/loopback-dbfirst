@@ -22,7 +22,7 @@ var config = {
             "host": "localhost",
             "database": "sakila",
             "username": "root",
-            "password": "Br4tbr4t",
+            "password": "XXXXXXX",
             "port": 3306
         }),
     dataSourceName: 'db',
