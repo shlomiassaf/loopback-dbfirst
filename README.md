@@ -1,6 +1,7 @@
 # loopback-dbfirst
 
 A simple generator for database first approach in loopback 2.x
+
 Manage transformation of database schema to Loopback LDL.
 Basically a nice wrapper around `discoverModelDefinitions` & `discoverSchemas`.
 
