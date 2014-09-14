@@ -41,9 +41,10 @@ var migrate = new DbFirst(config);
 migrate.automigrate(false);
 ```
 
-###`modelConfigPath`: Path to model-config.json.
+###modelConfigPath: 
+Path to model-config.json.
 
-###`modelMeta` & `baseModelConfigPath`:
+###modelMeta & baseModelConfigPath:
 Database objects overwrite base model-config objects.
 A base 'model-config.json' is used to provide basic models using the filename 'model-config-base.json'.
 In this example, the database has matching tables for all models in the base model-config.
@@ -54,10 +55,14 @@ The 'City' object is not in the base model config.
 It is defined as a table in the database but we dont want to create an LDL file for it.  
 Setting skipCustom to true will make sure it is created in 'model-config.json' but definition file creation is skipped.
 
-####`modelMeta.skip`: The model is not declared (model-config.json) and not defined.
-####`modelMeta.skipCustom`: The model is declared in model-config.json but not defined (no LDL and custom logic files).
+####modelMeta.skip: 
+The model is not declared (model-config.json) and not defined.
+
+####modelMeta.skipCustom: 
+The model is declared in model-config.json but not defined (no LDL and custom logic files).
  
-###`modelPublicDefault` defines a function for handling api visibility.
+###`modelPublicDefault` 
+Defines a function for handling api visibility.
 Here we define that models with more then 3 characters are public, 3 or less are private.
 
 model-config-base.json:
