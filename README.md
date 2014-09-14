@@ -1,8 +1,8 @@
 # loopback-dbfirst
 
 A simple generator for database first approach in loopback 2.x
-Manages transformation of database schema to Loopback LDL.
-Basically a nice wrapper around discoverModelDefinitions & discoverSchemas.
+Manage transformation of database schema to Loopback LDL.
+Basically a nice wrapper around `discoverModelDefinitions` & `discoverSchemas`.
 
 This is a super beta, no testing.
 
@@ -40,12 +40,14 @@ var migrate = new DbFirst(config);
 migrate.automigrate(false);
 ```
 
-In the above, a base 'model-config.json' is used to provide basic models, filename 'model-config-base.json'.
+A base 'model-config.json' is used to provide basic models, filename 'model-config-base.json'.
 The database contains the models in the base model-config so they must be skipped.
 This means that database objects will overwrite base model-config objects.
 The idea is to allow a model fallback.
 
 The 'City' object is not skipped, it will be created in 'model-config.json' but definition file creation is skipped.
+
+Models with more then 3 characters are public.
 
 model-config-base.json:
 ```javascript
